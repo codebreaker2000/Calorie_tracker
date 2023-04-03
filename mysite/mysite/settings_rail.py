@@ -4,6 +4,8 @@ SECRET_KEY=config('SECRET_KEY')
 
 ALLOWED_HOSTS = ['calorietracker-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGIN = ['https://calorietracker-production.up.railway.app']
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
